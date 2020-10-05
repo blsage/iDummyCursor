@@ -1,12 +1,12 @@
 import XCTest
-@testable import DummyCursor
+@testable import iDummyCursor
 
-final class DummyCursorTests: XCTestCase {
+final class iDummyCursorTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(DummyCursor().text, "Hello, World!")
+        XCTAssertEqual(iDummyCursor().text, "Hello, World!")
     }
 
     static var allTests = [

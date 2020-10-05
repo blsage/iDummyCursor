@@ -1,7 +1,7 @@
 import XCTest
 
-import DummyCursorTests
+import iDummyCursorTests
 
 var tests = [XCTestCaseEntry]()
-tests += DummyCursorTests.allTests()
+tests += iDummyCursorTests.allTests()
 XCTMain(tests)

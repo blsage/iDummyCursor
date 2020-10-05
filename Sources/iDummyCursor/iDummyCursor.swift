@@ -2,7 +2,7 @@ import SwiftUI
 
 @available(iOS 13.0, *)
 /// A dummy cursor view that looks and blinks like a real iOS cursor
-struct DummyCursor: View {
+struct iDummyCursor: View {
     
     private var foregroundColor: Color?
     @State private var on: Bool = true
@@ -38,11 +38,11 @@ struct DummyCursor: View {
 }
 
 @available(iOS 13.0, *)
-extension DummyCursor {
+extension iDummyCursor {
     /// Modifies the color of the dummy cursor
     /// - Parameter color: The desired cursor color
     /// - Returns: A cursor with modified color
-    mutating func foregroundColor(_ color: Color?) -> DummyCursor {
+    mutating func foregroundColor(_ color: Color?) -> iDummyCursor {
         let view = self
         self.foregroundColor = color
         return view
