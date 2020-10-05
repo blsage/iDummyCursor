@@ -21,6 +21,7 @@ public struct iDummyCursor: View {
         ZStack {
             RoundedRectangle(cornerRadius: 1)
                 .fill(foregroundColor ?? Color.blue)
+                // TODO: Add flexible framing functionality
                 .frame(width: 2, height: 22)
                 .opacity(on ? 1 : 0)
         }
