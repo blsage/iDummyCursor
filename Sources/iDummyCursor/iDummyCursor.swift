@@ -8,14 +8,14 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-/// A dummy cursor view that looks and blinks like a real iOS cursor
+/// A dummy cursor view that looks and blinks like a real iOS cursor.
 public struct iDummyCursor: View {
     
     private var foregroundColor: Color?
     private var size: CGFloat = 14.0
     @State private var on: Bool = true
     
-    /// Creats a new dummy cursor view
+    /// Creats a new dummy cursor view.
     public init() { }
     
     public var body: some View {
@@ -51,7 +51,7 @@ public struct iDummyCursor: View {
 
 @available(iOS 13.0, *)
 extension iDummyCursor {
-    /// Modifies the color of the dummy cursor
+    /// Modifies the color of the dummy cursor.
     /// - Parameter color: The desired cursor color
     /// - Returns: A cursor with modified color
     public func foregroundColor(_ color: Color?) -> iDummyCursor {
@@ -60,6 +60,9 @@ extension iDummyCursor {
         return view
     }
     
+    /// Modifies the font size that the dummy cursor is expected to fit.
+    /// - Parameter size: The font size to be paired with the cursor, in points
+    /// - Returns: A cursor with modified size based on expected font size
     public func fontSize(_ size: CGFloat) -> iDummyCursor {
         var view = self
         view.size = size
