@@ -12,6 +12,7 @@ import SwiftUI
 public struct iDummyCursor: View {
     
     private var foregroundColor: Color?
+    private var size: CGFloat = 14.0
     @State private var on: Bool = true
     
     /// Creats a new dummy cursor view
@@ -22,7 +23,7 @@ public struct iDummyCursor: View {
             RoundedRectangle(cornerRadius: 1)
                 .fill(foregroundColor ?? Color.blue)
                 // TODO: Add flexible framing functionality
-                .frame(width: 2, height: 22)
+                .frame(width: 2, height: (2.29925 * size + 3.28947) / 2)
                 .opacity(on ? 1 : 0)
         }
         .onAppear {
@@ -56,6 +57,12 @@ extension iDummyCursor {
     public func foregroundColor(_ color: Color?) -> iDummyCursor {
         var view = self
         view.foregroundColor = color
+        return view
+    }
+    
+    public func fontSize(_ size: CGFloat) -> iDummyCursor {
+        var view = self
+        view.size = size
         return view
     }
 }
