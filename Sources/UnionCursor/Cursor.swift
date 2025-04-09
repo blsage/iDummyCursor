@@ -1,16 +1,16 @@
 //
-//  iDummyCursor.swift
-//  PackagesTesting
+//  Cursor.swift
+//  union-cursor
 //
-//  Created by Benjamin Sage on 10/5/20.
+//  Created by Ben Sage on 10/5/20.
 //
 
 import SwiftUI
 
 @available(iOS 13.0, *)
 /// A **dummy cursor** view that looks and blinks like a real iOS 📱 cursor 🖱👆.
-public struct iDummyCursor: View {
-    
+public struct Cursor: View {
+
     private var foregroundColor: Color?
     private var size: CGFloat = 14.0
     @State private var on: Bool = true
@@ -50,11 +50,11 @@ public struct iDummyCursor: View {
 }
 
 @available(iOS 13.0, *)
-extension iDummyCursor {
+extension Cursor {
     /// Modifies the **color** 🎨 of the dummy cursor.
     /// - Parameter color: The desired cursor color
     /// - Returns: A cursor with modified color
-    public func foregroundColor(_ color: Color?) -> iDummyCursor {
+    public func foregroundColor(_ color: Color?) -> Cursor {
         var view = self
         view.foregroundColor = color
         return view
@@ -63,7 +63,7 @@ extension iDummyCursor {
     /// Modifies the **font size** 🔡🔠 that the dummy cursor is expected to fit.
     /// - Parameter size: The font size to be paired with the cursor, in points
     /// - Returns: A cursor with modified size based on expected font size
-    public func fontSize(_ size: CGFloat) -> iDummyCursor {
+    public func fontSize(_ size: CGFloat) -> Cursor {
         var view = self
         view.size = size
         return view

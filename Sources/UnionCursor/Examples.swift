@@ -2,7 +2,7 @@
 //  Examples.swift
 //  
 //
-//  Created by Benjamin Sage on 10/8/20.
+//  Created by Ben Sage on 10/8/20.
 //
 
 import SwiftUI
@@ -39,7 +39,7 @@ struct InputNumber: View {
     var numberWhite: Double { darkMode ? 0.65 : 0.5 }
     
     var cursor: some View {
-        iDummyCursor()
+        Cursor()
             .fontSize(32)
             .foregroundColor(Color(red: 0.3, green: 0.76, blue: 0.85))
     }

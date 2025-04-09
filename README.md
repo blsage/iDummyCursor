@@ -1,4 +1,4 @@
-# iDummyCursor
+# UnionCursor
 
 Need a proper **blinking cursor** view for your custom text field? This is your SwiftUI package.
 
